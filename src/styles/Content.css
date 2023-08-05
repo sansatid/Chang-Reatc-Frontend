@@ -39,12 +39,13 @@
 .text1 {
     font-size: 50px;
     color: white;
-    padding-top: 10%;
+    padding-top: 15%;
 }
 
 .text2 {
     font-size: 25px;
     color: white;
+    padding-top: 10%;
 }
 
 .info {

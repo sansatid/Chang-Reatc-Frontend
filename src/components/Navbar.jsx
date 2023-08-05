@@ -41,26 +41,12 @@ export default function Navbar(props) {
     setopen(false);
   };
 
-  const handleChangeUsername = (e) => {
-    setlogindata({
-      ...loginData,
-      username: e.target.value,
-    });
-  };
-
-  const handleChangePassword = (e) => {
-    setlogindata({
-      ...loginData,
-      password: e.target.value,
-    });
-  };
-
   const handleLogin = () => {
     axios({
-      url: "http://localhost:3000/login",
+      url: window.$api +"/login",
       method: "POST",
       data: authData,
-    }).then((res) => {
+    }).then(res => {
       if (res.data.success) {
         props.setAvatarLetter(res.data.data.user.username.charAt(0).toUpperCase());
         localStorage.setItem("token", res.data.data.token);
@@ -72,7 +58,7 @@ export default function Navbar(props) {
 
   const handleRegister = () => {
     axios({
-      url: "http://localhost:3000/register",
+      url: window.$api +"/register",
       method: "POST",
       data: authData,
     }).then((res) => {

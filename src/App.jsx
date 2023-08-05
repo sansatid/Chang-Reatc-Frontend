@@ -8,7 +8,7 @@ import Profile from './pages/Profile'
 import OriginalSeries from './pages/OriginalSeries'
 import Navbar from './components/Navbar'
 import axios from 'axios'
-import BackgroundImg from './assets/123.jpg'
+import BackgroundImg from './assets/1234.jpg'
 
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -19,7 +19,7 @@ export default function App() {
 
     if (token) {
       axios({
-        url: 'http://localhost:3000/user',
+        url:  window.$api +'/user',
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`

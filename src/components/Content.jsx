@@ -1,12 +1,16 @@
 import React from 'react'
 import '../styles/Content.css'
-import Img from '../../public/content-img.avif'
+import Img from '../assets/drawing-367946_1920.png'
 
 export default function Content() {
     return (
-        <div className='container'>
+        <div className='contentContainer'>
             <div className='info'>
-                1
+                <p className='text1'>The video host with the most</p>
+                <p className='text2'>See measurable result from your videos (and podcast too)
+                    with our complete hosting plaform for our marketers.</p>
+                    <button className='button1'>Try for free</button>
+                    <button className='button2'>Explore our plan</button>
             </div>
             <div className='image'>
                 <img src={Img} width={'100%'}/>

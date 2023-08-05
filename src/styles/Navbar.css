@@ -1,23 +1,38 @@
-.container {
+.navbarContainer {
     display: flex; 
     width: 90%; 
     margin: auto;
 }
 
+.navbarIcon {
+    flex: 1;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .logo {
-    flex: 0.5
+    color: white;
+    flex: 0.7;
+    font-size: 25px;
 }
 
 .menu {
     display: flex; 
-    flex: 1;
+    flex: 2;
     font-size: 22px;
 }
 
 .menuItem {
+    color: white;
     display: flex; 
     flex: 1; 
     align-items: center;
+    cursor: pointer;
+}
+
+.menuItem:hover {
+    color: rgb(0, 0, 0);
 }
 
 .button {
@@ -27,14 +42,18 @@
     align-items: center;
 }
 
+
+
 .loginButtonStyle {
     background-color: white; 
     border: none;
-    padding: 10px 60px;
-    border-radius: 4px;
+    padding: 15px 65px;
+    border-radius: 5px;
     cursor: pointer;
     margin-right: 5px;
 }
+
+
 
 .loginButtonStyle:hover {
     background-color: #ddd;
@@ -42,14 +61,47 @@
 
 .getStartButtonStyle {
     background-color: darkblue; 
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
-    padding: 10px 60px;
-    border-radius: 4px;
+    padding: 15px 65px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .getStartButtonStyle:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+/* mobile device */
+@media screen and (max-widh: 599px){
+    .menu {
+        display: none;
+        font-size: 18px;
+    }
+    
+}
+
+/* ipad or macbook */
+@media screen and (max-width: 899px){
+    .menu {
+        display: none;
+        font-size: 18px;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .navbarIcon {
+        display: flex;
+    }
+}
+
+/* notebook or desktop */
+@media screen and (max-widh: 1200px){
+    .menu {
+        display: none;
+    }
+    
 }

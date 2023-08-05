@@ -6,7 +6,11 @@
 
 .navbarIcon {
     flex: 1;
+<<<<<<< HEAD
     display: none;
+=======
+    display: none; 
+>>>>>>> 2cf63d4ade83bcd86bdc24c223c99ac253b3dda1
     align-items: center;
     justify-content: flex-end;
 }
@@ -19,8 +23,13 @@
 
 .menu {
     display: flex; 
+<<<<<<< HEAD
     flex: 2;
     font-size: 22px;
+=======
+    flex: 1;
+    font-size: 18px;
+>>>>>>> 2cf63d4ade83bcd86bdc24c223c99ac253b3dda1
 }
 
 .menuItem {
@@ -28,11 +37,19 @@
     display: flex; 
     flex: 1; 
     align-items: center;
+<<<<<<< HEAD
+=======
+    justify-content: center;
+>>>>>>> 2cf63d4ade83bcd86bdc24c223c99ac253b3dda1
     cursor: pointer;
 }
 
 .menuItem:hover {
+<<<<<<< HEAD
     color: rgb(0, 0, 0);
+=======
+    color: white;
+>>>>>>> 2cf63d4ade83bcd86bdc24c223c99ac253b3dda1
 }
 
 .button {
@@ -69,6 +86,7 @@
 }
 
 .getStartButtonStyle:hover {
+<<<<<<< HEAD
     background-color: #000000;
     color: rgb(255, 255, 255);
 }
@@ -87,6 +105,21 @@
     .menu {
         display: none;
         font-size: 18px;
+=======
+    background-color: #ddd;
+    color: black;
+}
+
+/* mobile device */
+@media screen and (max-width: 599px) {
+
+}
+
+/* ipad or macbook */
+@media screen and (max-width: 899px) {
+    .menu {
+        display: none;
+>>>>>>> 2cf63d4ade83bcd86bdc24c223c99ac253b3dda1
     }
 
     .button {
@@ -99,9 +132,14 @@
 }
 
 /* notebook or desktop */
+<<<<<<< HEAD
 @media screen and (max-widh: 1200px){
     .menu {
         display: none;
     }
     
+=======
+@media screen and (max-width: 1200px) {
+
+>>>>>>> 2cf63d4ade83bcd86bdc24c223c99ac253b3dda1
 }

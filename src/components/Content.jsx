@@ -8,12 +8,12 @@ export default function Content() {
             <div className='info'>
                 <p className='text1'>The video host with the most</p>
                 <p className='text2'>See measurable result from your videos (and podcast too)
-                    with our complete hosting plaform for our marketers.</p>
-                    <button className='button1'>Try for free</button>
-                    <button className='button2'>Explore our plan</button>
+                    with our complete hosting platform for our marketers.</p>
+                <button className='button1'>Try for free</button>
+                <button className='button2'>Explore our plan</button>
             </div>
             <div className='image'>
-                <img src={Img} width={'100%'}/>
+                <img src={Img} width={'100%'} />
             </div>
         </div>
     )

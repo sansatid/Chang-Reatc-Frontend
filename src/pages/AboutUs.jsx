@@ -1,32 +1,26 @@
 import React from 'react'
-import '../styles/AboutUs.css'
-import Img from '../assets/123.jpg'
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import { Container, Box, Typography, Button } from '@mui/material/';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { responsiveFontSizes } from '@mui/material';
 
-
-
-export default function Content() {
-    return (
-        <div className='container1'>
-            <div className='info01'>
-                <p className='text01'>ABOUT US</p>
-                <p className='text02'>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
-                <p className='text03'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsum repellat dolorem ullam necessitatibus alias enim impedit, in dolorum obcaecati.</p>
-                    <button className='button01'>Read More</button>
-
-                <div className='social'>
-                <FacebookOutlinedIcon sx={{ fontSize: 50 }}/>
-                <TwitterIcon sx={{ fontSize: 50}}/>
-                <InstagramIcon sx={{ fontSize: 50 }}/>
-                </div>
-                    
-            </div>
-            <div className='image01'>
-                <img src={Img} width={'90%'}/>
-            </div>
-        </div>
-    )
+export default function AboutUs() {
+  return (
+    <Container maxWidth='xl' >
+      <Box display={{md: 'flex', xs: 'block'}} alignItems={'center'} height={'100vh'}>
+        <Box flex={1} >
+          <Typography variant='h2' gutterBottom>About us</Typography>
+          <Typography variant='h5' gutterBottom>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Typography>
+          <Typography variant='body1' gutterBottom>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra facilisis purus, tincidunt pretium dolor placerat ut. Curabitur in justo mattis, volutpat erat in, lobortis purus. Morbi volutpat facilisis metus. In ipsum quam, tincidunt et suscipit id, feugiat egestas lorem</Typography>
+          <Button variant='contained'>Read More</Button>
+          <FacebookIcon />
+          <TwitterIcon />
+          <InstagramIcon />
+        </Box>
+        <Box flex={1}>
+          <img src='/content-img.avif' />
+        </Box>
+      </Box>
+    </Container>
+  )
 }

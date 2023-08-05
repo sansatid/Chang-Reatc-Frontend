@@ -65,6 +65,7 @@ export default function App() {
           <Route path="/original-series" element={<OriginalSeries/>} />
           <Route path="/aboutus" element={<Aboutus/>} />
         <Route path="profile" element={<Profile isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} avatarLetter={avatarLetter} setAvatarLetter={setAvatarLetter}/>}/>
+
         </Routes>
       </BrowserRouter>
     </div>

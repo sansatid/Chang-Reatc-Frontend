@@ -29,7 +29,7 @@ export default function LoginDialog(props) {
                 <TextField
                 autoFocus
                 label='Age'
-                name="Age"
+                name="age"
                 type='number'
                 fullWidth
                 margin='dense'

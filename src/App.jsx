@@ -44,8 +44,8 @@ export default function App() {
       height: '100vh',
       width: '100vw',
       // overflow: 'hidden',
-      color: 'white',
-    }}
+      color: 'white'
+      }}
     >
        {/*<Navbar />
        <Content /> */}

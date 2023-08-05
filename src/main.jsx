@@ -6,7 +6,7 @@ import './index.css'
 // window.$api = 'http://localhost:3000'
 
 
-window.$api = 'http://5.189.153.72:3004'
+window.$api = 'http://cahangapi/wannabedevs.com'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
